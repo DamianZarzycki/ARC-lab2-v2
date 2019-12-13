@@ -1,0 +1,13 @@
+dispatch:
+
+  - url: "*/api/v1/*"
+    service: api
+  
+  - url: "*/api1/v1/*"
+    service: lab2v1
+
+  - url: "*/api2/v1/*"
+    service: lab2v2
+
+  - url: "*/*"
+    service: tv
