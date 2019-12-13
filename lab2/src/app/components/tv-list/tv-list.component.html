@@ -1,0 +1,27 @@
+<div class="container">
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <th>ID</th>
+            <th>ADD TIME</th>
+            <th>BRAND</th>
+            <th>CONTRAST</th>
+            <th>FORMAT</th>
+            <th>IMAGE</th>
+            <th>RESOLUTION</th>
+            <th>TYPE</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tv of tvs">
+                <td id="tvId">{{tv.id}}</td>
+                <td>{{tv?.details.addTime}}</td>
+                <td>{{tv?.details.brand}}</td>
+                <td>{{tv?.details.contrast}}</td>
+                <td>{{tv?.details.format}}</td>
+                <td>{{tv?.details.image}}</td>
+                <td>{{tv?.details.resolution}}</td>
+                <td>{{tv?.details.type}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
